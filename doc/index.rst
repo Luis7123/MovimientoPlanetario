@@ -12,3 +12,4 @@ Basics
 
    purpose.rst
    dependencies.rst
+   codigo.md
