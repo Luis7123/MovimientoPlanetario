@@ -26,7 +26,7 @@ este sera nuestro sistema de ecuaciones, el cual implementaremos con Euler.
 
  Tal que:
 
- $X_0= 1$, $y_0 =0$ ,$V_0x=0$ y por ultimo $ V_oy=2\pi$
+ $X_0= 1$, $y_0 =0$ , $V_0x=0$ y por ultimo $V_oy=2\pi$
 
 ### Codigo implementado.
 ```py
