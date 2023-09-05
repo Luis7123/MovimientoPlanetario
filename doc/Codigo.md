@@ -29,7 +29,7 @@ este sera nuestro sistema de ecuaciones, el cual implementaremos con Euler.
  $X_0= 1$, $y_0 =0$ ,$V_0x=0$ y por ultimo $ V_oy=2\pi$
 
 ### Codigo implementado.
-```python
+```py
 def f(t,u):
     k1=2;k2=1.5;k3=1
 
@@ -55,7 +55,7 @@ u=np.array([0,2*np.pi,1,0])
 ```python
 
 # Plots
-```
+```py
 A=eu_vec(0,1,10000,u) # 0 años, hasta 1 año, 10000 iteraciones. grafica de todo el sistema con respecto al tiempo.
 ```
 ![Imagen1](graf1.png)
@@ -73,7 +73,7 @@ Aqui podemos ver algo mas claro, luego de un año se cumple una elipse casi comp
 Como tal no hace una elipse perfecta, es ligeramente desfazada
 
 # Luego de 10 años
-```p
+```py
 A=eu_vec(0,10,10000,u)
 plt.savefig("Grafica de todo el sistema con respecto al tiempo de 0 a 10 años.")
 ```
@@ -81,7 +81,7 @@ plt.savefig("Grafica de todo el sistema con respecto al tiempo de 0 a 10 años."
 Vemos algo repetitivo, siguiendo los mismos movimientos en el tiempo de la derivada y su posición.
 
 # Posicion de 10 años
-```p
+```py
 plt.plot(A[2],A[3]) #una prueba de 10 años.
 plt.savefig("posicion en 10 años")
 plt.show() #como vemos asemeja a Muchos circulos
