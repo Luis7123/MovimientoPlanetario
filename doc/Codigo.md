@@ -58,24 +58,34 @@ u=np.array([0,2*np.pi,1,0])
 ```
 A=eu_vec(0,1,10000,u) # 0 años, hasta 1 año, 10000 iteraciones. grafica de todo el sistema con respecto al tiempo.
 ```
-![Imagen1](Grafica de todo el sistema con respecto al tiempo de 0 a 1 años.jpg)
+![Imagen1](graf1.jpg)
 
+Esta claro que no se puede entender bien la imagen, pero en pocas palabras son los valores de la posición y de las derivadas..
+
+## Posicion en 1 año
 ```
 plt.plot(A[2],A[3])
 plt.savefig("Posicion en 1 año")
 plt.show() #como vemos asemeja a un circulo.
 ```
-![Imagen1](Posicion en 1 año.jpg)
+![Imagen2](graf2.jpg)
+Aqui podemos ver algo mas claro, luego de un año se cumple una elipse casi completa, como podemos ver no se pega exactamente, esto sucede realmente en la tierra
+Como tal no hace una elipse perfecta, es ligeramente desfazada
 
+# Luego de 10 años
 ```
 A=eu_vec(0,10,10000,u)
 plt.savefig("Grafica de todo el sistema con respecto al tiempo de 0 a 10 años.")
 ```
-![Imagen1](Grafica de todo el sistema con respecto al tiempo de 0 a 10 años.jpg)
+![Imagen3](graf3.jpg)
+Vemos algo repetitivo, siguiendo los mismos movimientos en el tiempo de la derivada y su posición.
 
+# Posicion de 10 años
 ```
 plt.plot(A[2],A[3]) #una prueba de 10 años.
 plt.savefig("posicion en 10 años")
 plt.show() #como vemos asemeja a Muchos circulos
 ```
-![Imagen1](posicion en 10 años.jpg)
+![Imagen4](graf4.jpg)
+
+Las posiciones han sido bastante buenas y como vemos cada vez se hace "pequeño" pero nunca llega a completar el circulo, podriamos decir que la tierra se esta alejando en el eje (-x) si tomamos en cuenta unas coordenadas $r^3$
