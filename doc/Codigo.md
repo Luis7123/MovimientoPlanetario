@@ -15,7 +15,7 @@ este sera nuestro sistema de ecuaciones, el cual implementaremos con Euler.
 * Recordemos que usaremos methodos numericos en el cual el lenguaje principal sera Python*
 
 ### Importemos librerias
-   ```
+   ```py
    import numpy as np 
    import math
    import matplotlib.pyplot as plt
@@ -29,7 +29,7 @@ este sera nuestro sistema de ecuaciones, el cual implementaremos con Euler.
  $X_0= 1$, $y_0 =0$ ,$V_0x=0$ y por ultimo $ V_oy=2\pi$
 
 ### Codigo implementado.
-```
+```python
 def f(t,u):
     k1=2;k2=1.5;k3=1
 
@@ -52,7 +52,7 @@ def eu_vec(a,b,n,u):
     plt.plot(t,w)
     return df#df.tail()
 u=np.array([0,2*np.pi,1,0])
-```
+```python
 
 # Plots
 ```
@@ -63,7 +63,7 @@ A=eu_vec(0,1,10000,u) # 0 años, hasta 1 año, 10000 iteraciones. grafica de tod
 Esta claro que no se puede entender bien la imagen, pero en pocas palabras son los valores de la posición y de las derivadas..
 
 ## Posicion en 1 año
-```
+```py
 plt.plot(A[2],A[3])
 plt.savefig("Posicion en 1 año")
 plt.show() #como vemos asemeja a un circulo.
@@ -73,7 +73,7 @@ Aqui podemos ver algo mas claro, luego de un año se cumple una elipse casi comp
 Como tal no hace una elipse perfecta, es ligeramente desfazada
 
 # Luego de 10 años
-```
+```p
 A=eu_vec(0,10,10000,u)
 plt.savefig("Grafica de todo el sistema con respecto al tiempo de 0 a 10 años.")
 ```
@@ -81,7 +81,7 @@ plt.savefig("Grafica de todo el sistema con respecto al tiempo de 0 a 10 años."
 Vemos algo repetitivo, siguiendo los mismos movimientos en el tiempo de la derivada y su posición.
 
 # Posicion de 10 años
-```
+```p
 plt.plot(A[2],A[3]) #una prueba de 10 años.
 plt.savefig("posicion en 10 años")
 plt.show() #como vemos asemeja a Muchos circulos
