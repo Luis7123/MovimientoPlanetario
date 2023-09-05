@@ -58,7 +58,7 @@ u=np.array([0,2*np.pi,1,0])
 ```
 A=eu_vec(0,1,10000,u) # 0 años, hasta 1 año, 10000 iteraciones. grafica de todo el sistema con respecto al tiempo.
 ```
-![Imagen1](graf1.jpg)
+![Imagen1](MovimientoPlanetario/doc/graf1.png.jpg)
 
 Esta claro que no se puede entender bien la imagen, pero en pocas palabras son los valores de la posición y de las derivadas..
 
@@ -68,7 +68,7 @@ plt.plot(A[2],A[3])
 plt.savefig("Posicion en 1 año")
 plt.show() #como vemos asemeja a un circulo.
 ```
-![Imagen2](graf2.jpg)
+![Imagen2](MovimientoPlanetario/doc/graf2.png.jpg)
 Aqui podemos ver algo mas claro, luego de un año se cumple una elipse casi completa, como podemos ver no se pega exactamente, esto sucede realmente en la tierra
 Como tal no hace una elipse perfecta, es ligeramente desfazada
 
@@ -77,7 +77,7 @@ Como tal no hace una elipse perfecta, es ligeramente desfazada
 A=eu_vec(0,10,10000,u)
 plt.savefig("Grafica de todo el sistema con respecto al tiempo de 0 a 10 años.")
 ```
-![Imagen3](graf3.jpg)
+![Imagen3](MovimientoPlanetario/doc/graf3.png.jpg)
 Vemos algo repetitivo, siguiendo los mismos movimientos en el tiempo de la derivada y su posición.
 
 # Posicion de 10 años
@@ -86,6 +86,6 @@ plt.plot(A[2],A[3]) #una prueba de 10 años.
 plt.savefig("posicion en 10 años")
 plt.show() #como vemos asemeja a Muchos circulos
 ```
-![Imagen4](graf4.jpg)
+![Imagen4](MovimientoPlanetario/doc/graf5.png.jpg)
 
 Las posiciones han sido bastante buenas y como vemos cada vez se hace "pequeño" pero nunca llega a completar el circulo, podriamos decir que la tierra se esta alejando en el eje (-x) si tomamos en cuenta unas coordenadas $r^3$
