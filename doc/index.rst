@@ -12,6 +12,3 @@ Basics
 
    purpose.rst
    dependencies.rst
-   usage.rst
-   credit.rst
-   exercises.rst
